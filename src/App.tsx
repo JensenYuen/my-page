@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import InfoPage from './pages/InfoPage';
@@ -17,6 +18,7 @@ const App = () =>{
         <Route path='/portfoilo' element={<Portfoilo />} />
         <Route path='/about' element={<InfoPage />} />
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }
