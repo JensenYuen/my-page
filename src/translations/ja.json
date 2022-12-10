@@ -4,22 +4,22 @@
     "aboutme": "シンガポール出身です。キャリアチェーンジャーです。現在、フルースタックエンジニアのキャリアを追求しております。"
   },
   "portfoilo": {
-    "header": "Portfoilo",
-    "subtext": "This section contains work that I have contributed to developing.",
+    "header": "ポートフォリオ",
+    "subtext": "このページは私を担当者の１人として開発したサイトです。  ",
     "offgrid": {
       "title": "Offgrid",
-      "description": "Final project",
-      "info": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their family/friends."
+      "description": "卒業プロジェクト",
+      "info": "Offgridは、登山の初心者向けに作成しました。天気予報、必要なもの、ルート、などの基本情報を綺麗に準備して、緊急連絡先も含めて、緊急な時に情報は家族や救急隊に送ります。"
     },
     "scubadoo": {
       "title": "Scubadoo",
       "description": "ECクローン",
-      "info": "Scubadoo is a marketplace clone (of Padi) developed within 3 days, this app was created to help divers locate dive centers and dive listings around the world."
+      "info": "Scubadooは、ダイバー向けに作成しました。世界中のダイバーセンターやダイブ場所を簡単に探せるのサイトです。3日間に作成した(Padiの)ECクローンです。"
     },
     "gathersg": {
       "title": "GatherSG",
       "description": "Case managment",
-      "info": "Maintained and developed features. Developed REST API for system integrations. Engaged with stakeholders and users to provide support for their issues."
+      "info": "保守、新しい機能を開発しました。関係者やユーザーと関わり、問題解決しました。REST APIを開発して、3つのシステムを連携しました。"
     }
   },
   "aboutpage": {}

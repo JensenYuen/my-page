@@ -8,12 +8,10 @@ interface Link {
 }
 
 interface Props {
-  heading: string,
-  subText: string,
   link?: Link
 }
 
-const Banner = ({ heading, subText, link }: Props) => {
+const Banner = ({ link }: Props) => {
   const { t } = useTranslation();
 
   return (
