@@ -1,6 +1,5 @@
-import { Button, Container, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 interface Props {
