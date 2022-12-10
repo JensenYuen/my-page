@@ -14,7 +14,7 @@ const CustomCard = ({ className, title, text, info, link }:props) => {
   return (
     <div className={`${className}`}>
       <Card className='bg-dark h-100 text-white'>
-        <Card.Img src={link} variant="top" alt="Card image" style={{ objectFit: "fill" }}/>
+        <Card.Img src={link} variant="top" alt="Card image" className='h-100'/>
         <Card.Body>
           <div className='d-flex'>
             <Card.Title className='px-1'>{title}</Card.Title>
