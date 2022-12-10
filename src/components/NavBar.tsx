@@ -11,7 +11,7 @@ const NavBar = ({ title, links }: Props) => {
 
   return (
     <Nav className="justify-content-center border-bottom shadow
-      border-dark border-opacity-75 fixed-top bg-light px-5 py-1"
+      border-dark border-opacity-50 fixed-top bg-light px-5 py-1"
       activeKey="/home"
     >
       <header className='d-flex flex-row'>
