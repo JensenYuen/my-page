@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from './Image';
 
 interface Link {
   link: string,
@@ -7,34 +8,35 @@ interface Link {
 
 interface Props {
   heading: string,
-  subHeading: string,
+  subText: string,
   link?: Link
 }
 
-const Banner = ({ heading, subHeading, link }: Props) => {
-
+const Banner = ({ heading, subText, link }: Props) => {
   return (
-    <header style={{ marginTop: '55px' }}>
-      <div
-        className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: 400 }}
-      >
-        <div className='mask rounded-2' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>{heading}</h1>
-              <h4 className='mb-3'>{subHeading}</h4>
-              {link &&
-                <a className='btn btn-outline-light btn-lg' href={link?.link} role='button'>
-                  {link?.btnText}
-                </a>
-              }
-            </div>
+    <>
+      <div className='container' style={{ margin: "auto", paddingInline: "5vw"}}>
+        <div className='d-flex justify-content-center align-items-center row'>
+          <div className='col-lg-6 col-md-12 col-sm-12'>
+            <h1 className='mb-2 fw-bold'>{heading}</h1>
+            <p
+              className='mb-2 text-wrap'
+              style={{ width: "25rem" }}
+            >
+              {subText}
+            </p>
+            {link &&
+              <a className='btn btn-outline-light btn-lg' href={link?.link} role='button'>
+                {link?.btnText}
+              </a>
+            }
           </div>
+          <Image className='col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center'/>
         </div>
       </div>
-    </header>
-  );
+    </>
+  )
+
 }
 
 export default Banner;
