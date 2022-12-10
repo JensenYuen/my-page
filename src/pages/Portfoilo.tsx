@@ -9,15 +9,21 @@ import { Url } from 'url';
 interface CardInfo {
   title: string;
   text: string;
+  info: string;
   link: string;
 }
 
 const Portfoilo = () => {
   const infos: CardInfo[] = [];
-  const productOne = { title: "OffGrid", text: "Final project", link: offgrid};
-  const productTwo = { title: "Scubadoo", text: "EC clone", link: scubadoo };
-  const productThree = { title: "GatherSG", text: "Case management", link: gathersg };
-  infos.push(productOne, productTwo, productThree);
+  const infoText ={
+    offgrid: "Offgrid was developed to help hikers",
+    scubadoo: "A marketplace clone developed within 3 days",
+    gathersg: "-"
+}
+  const productOffgid = { title: "OffGrid", text: "Final project", link: offgrid, info: infoText.offgrid};
+  const productScubadoo = { title: "Scubadoo", text: "EC clone", link: scubadoo, info: infoText.scubadoo };
+  const productGathersg = { title: "GatherSG", text: "Case management", link: gathersg, info: infoText.gathersg };
+  infos.push(productOffgid, productScubadoo, productGathersg);
 
   const renderCards = () => {
     const cards = infos.map((info) => {
@@ -26,6 +32,7 @@ const Portfoilo = () => {
           className='col'
           title={info.title}
           text={info.text}
+          info={info.info}
           link={info.link}
         />
       )
