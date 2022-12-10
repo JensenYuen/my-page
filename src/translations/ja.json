@@ -1,0 +1,26 @@
+{
+  "homepage": {
+    "name": "ユエン・ホー・チンと申します",
+    "aboutme": "シンガポール出身です。キャリアチェーンジャーです。現在、フルースタックエンジニアのキャリアを追求しております。"
+  },
+  "portfoilo": {
+    "header": "Portfoilo",
+    "subtext": "This section contains work that I have contributed to developing.",
+    "offgrid": {
+      "title": "Offgrid",
+      "description": "Final project",
+      "info": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their family/friends."
+    },
+    "scubadoo": {
+      "title": "Scubadoo",
+      "description": "ECクローン",
+      "info": "Scubadoo is a marketplace clone (of Padi) developed within 3 days, this app was created to help divers locate dive centers and dive listings around the world."
+    },
+    "gathersg": {
+      "title": "GatherSG",
+      "description": "Case managment",
+      "info": "Maintained and developed features. Developed REST API for system integrations. Engaged with stakeholders and users to provide support for their issues."
+    }
+  },
+  "aboutpage": {}
+}
