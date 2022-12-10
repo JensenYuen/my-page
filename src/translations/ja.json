@@ -18,7 +18,7 @@
     },
     "gathersg": {
       "title": "GatherSG",
-      "description": "Case managment",
+      "description": "官公庁サイト",
       "info": "保守、新しい機能を開発しました。関係者やユーザーと関わり、問題解決しました。REST APIを開発して、3つのシステムを連携しました。"
     }
   },
