@@ -18,6 +18,6 @@ main {
   color: #594545;
 }
 
-header, footer {
+a {
   text-decoration: none;
 }

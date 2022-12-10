@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 import InfoPage from './pages/InfoPage';
 import Portfoilo from './pages/Portfoilo';
 
-const App = () =>{
+const App = () => {
   const links: string[] = ['home','portfoilo','about'];
 
   return (
