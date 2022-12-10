@@ -18,10 +18,10 @@ const NavBar = ({ title, links }: Props) => {
         {
           links.map((link: string) => {
             return (
-              <Nav.Item>
-                <Nav.Link className="px-3" style={{ fontSize: "0.85rem" }}>
+              <Nav.Item key={link}>
+                <Nav className="px-3" style={{ fontSize: "0.85rem" }}>
                   <Link to={`/${link}`}>{link.toUpperCase()}</Link>
-                </Nav.Link>
+                </Nav>
               </Nav.Item>
             )
           })
