@@ -1,29 +1,18 @@
 import react from 'react'
-import { Container, Navbar } from 'react-bootstrap';
-import logo from '../logo.svg';
-import '../stylesheets/App.css';
+import { Container } from 'react-bootstrap';
+import '../index.css';
+import Banner from '../components/Banner';
 
 const HomePage = () => {
   return (
-    <Container fluid>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="/"
-          rel="noopener noreferrer"
-        >
-          Home Page
-        </a>
-        <a
-          className="App-link"
-          href="/info"
-          rel="noopener noreferrer"
-        >
-          About
-        </a>
-      </header>
-    </Container>
+    <main>
+      <Container fluid className='d-flex justiy-content-center item-align-center h-100'>
+        <Banner
+          heading="I'm Jensen Yuen"
+          subText='Borned and raised in Singapore. Career-changer. Currently, pursing a career as a Full-stack Developer.'
+        />
+      </Container>
+    </main>
   );
 }
 

@@ -1,6 +1,5 @@
-import Container from 'react-bootstrap/Container';
+import { NavbarBrand } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
 interface Props {
@@ -8,28 +7,26 @@ interface Props {
   links: string[]
 }
 
-const NavBar = ({ title, links }:Props) => {
+const NavBar = ({ title, links }: Props) => {
 
   return (
-    <Navbar bg="light" expand="lg" sticky='top'>
-      <Container fluid>
-        <Navbar.Brand href="/">{title}</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            {
-              links.map((link: string) =>{
-                return (
-                  <Nav>
-                    <Link to={`/${link}`}>{link}</Link>
-                  </Nav>
-                )
-              })
-            }
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <Nav className="justify-content-center border-bottom shadow
+      border-dark border-opacity-50 fixed-top bg-light px-5 py-1"
+      activeKey="/home"
+    >
+      <header className='d-flex flex-row'>
+        {
+          links.map((link: string) => {
+            return (
+              <Nav.Item>
+                <Nav.Link className="px-3" style={{ fontSize: "0.85rem" }}
+                  href={`/#/${link}`}>{link.toUpperCase()}</Nav.Link>
+              </Nav.Item>
+            )
+          })
+        }
+      </header>
+    </Nav>
   );
 }
 
