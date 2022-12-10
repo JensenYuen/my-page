@@ -5,17 +5,11 @@ import { Link } from 'react-router-dom';
 
 interface Props {
   title: string,
-  links: string[]
+  links: string[],
+  onChangeLanguage: (lng: string) => void
 }
 
-const NavBar = ({ title, links }: Props) => {
-  const language = window.navigator.language
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng:string) => {
-    i18n.changeLanguage(lng);
-  }
-
+const NavBar = ({ title, links, onChangeLanguage }: Props) => {
   const renderLinks = () => {
     const link = links.map((link: string) => {
       return (
@@ -32,15 +26,17 @@ const NavBar = ({ title, links }: Props) => {
 
   return (
     <div className='border-bottom shadow border-dark border-opacity-50 fixed-top bg-light px5 py-1'>
-      <Nav style={{ fontSize: "0.85rem" }}>
-        <Nav className="me-auto">
-          {renderLinks()}
+      <Container>
+        <Nav style={{ fontSize: "0.85rem" }}>
+          <Nav className="me-auto">
+            {renderLinks()}
+          </Nav>
+          <Nav>
+            <Nav.Link onClick={() => onChangeLanguage('en')}>English</Nav.Link>
+            <Nav.Link onClick={() => onChangeLanguage('ja')}>日本語</Nav.Link>
+          </Nav>
         </Nav>
-        <Nav>
-          <Nav.Link onClick={() => changeLanguage('en')}>English</Nav.Link>
-          <Nav.Link onClick={() => changeLanguage('ja')}>日本語</Nav.Link>
-        </Nav>
-      </Nav>
+      </Container>
     </div>
   )
 }
