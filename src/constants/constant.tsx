@@ -1,9 +1,14 @@
-export const ProfileImg = '../assets/images/profile.png';
+import offgrid from '../assets/images/offgrid.png'
+import scubadoo from '../assets/images/scubadoo.png'
+import gathersg from '../assets/images/gathersg.png'
+import profile from '../assets/images/profile.png'
+
+export const ProfileImg = profile;
 
 export const ProjImgs = {
-  offgrid: '../assets/images/offgrid.png',
-  scubadoo: '../assets/images/scubadoo.png',
-  gathersg: '../assets/images/gathersg.png'
+  offgrid: offgrid,
+  scubadoo: scubadoo,
+  gathersg: gathersg
 }
 
 export const ProjLinks = {
