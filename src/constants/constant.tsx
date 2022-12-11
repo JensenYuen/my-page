@@ -1,3 +1,5 @@
+export const ProfileImg = '../assets/images/profile.png';
+
 export const ProjImgs = {
   offgrid: '../assets/images/offgrid.png',
   scubadoo: '../assets/images/scubadoo.png',
