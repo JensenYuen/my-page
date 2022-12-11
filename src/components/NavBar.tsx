@@ -3,12 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 
 interface Props {
-  title: string,
   links: string[],
   onChangeLanguage: (lng: string) => void
 }
 
-const NavBar = ({ title, links, onChangeLanguage }: Props) => {
+const NavBar = ({ links, onChangeLanguage }: Props) => {
   const renderLinks = () => {
     const link = links.map((link: string) => {
       return (
