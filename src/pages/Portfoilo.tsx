@@ -37,7 +37,7 @@ const Portfoilo = () => {
 
   return (
     <main>
-      <Container fluid style={{ margin: "auto", paddingTop: "2vw", paddingInline: "5vw" }}>
+      <Container fluid style={{ margin: "auto", paddingTop: "4vw", paddingInline: "5vw" }}>
         <div className='py-5 px-4 pb-0'>
           <h2 className='pb-2 border-bottom'>{t("portfoilo.header")}</h2>
           <p className='fs-5'>{t("portfoilo.subtext")}</p>
