@@ -11,23 +11,23 @@ interface props {
   link?: string;
 }
 
-const CustomCard = ({ className, title, img, link }:props) => {
+const CustomCard = ({ className, title, img, link }: props) => {
   const { t } = useTranslation();
 
-  const titles:any = {
-    "offgrid": `${t("portfoilo.offgrid.title")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.title") }`,
-    "gathersg": `${t("portfoilo.gathersg.title") }`
+  const titles: any = {
+    offgrid: `${t("portfoilo.offgrid.title")}`,
+    scubadoo: `${t("portfoilo.scubadoo.title")}`,
+    gathersg: `${t("portfoilo.gathersg.title")}`
   }
-  const descriptions:any = {
-    "offgrid": `${t("portfoilo.offgrid.description")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.description")}`,
-    "gathersg": `${t("portfoilo.gathersg.description")}`
+  const descriptions: any = {
+    offgrid: `${t("portfoilo.offgrid.description")}`,
+    scubadoo: `${t("portfoilo.scubadoo.description")}`,
+    gathersg: `${t("portfoilo.gathersg.description")}`
   }
-  const infos:any = {
-    "offgrid": `${t("portfoilo.offgrid.info")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.info")}`,
-    "gathersg": `${t("portfoilo.gathersg.info")}`
+  const infos: any = {
+    offgrid: `${t("portfoilo.offgrid.info")}`,
+    scubadoo: `${t("portfoilo.scubadoo.info")}`,
+    gathersg: `${t("portfoilo.gathersg.info")}`
   }
 
   return (
