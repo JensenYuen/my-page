@@ -27,7 +27,7 @@
     "subtext": "このページは開発環境やトールを表示しています。",
     "react": {
       "title": "React",
-      "description": "Reactを使用して、SPA作成しました"
+      "description": "Reactを使用して、SPA構築しました"
     },
     "typescript": {
       "title": "TypeScript",
