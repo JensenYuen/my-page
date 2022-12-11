@@ -34,10 +34,10 @@ const CustomCard = ({ className, title, img, link }: props) => {
     <div className={`${className}`}>
       <Card className='bg-dark h-100 text-white'>
         <Card.Img src={img} variant="top" alt={title} className='h-100'/>
-        <Card.ImgOverlay className='d-flex justify-content-end align-items-end'>
+        <Card.ImgOverlay className='d-flex justify-content-end align-items-start'>
           { link &&
             <Card.Link href={link} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon color='white' size='1x' icon={faGithub} />
+              <FontAwesomeIcon color='black' size='lg' icon={faGithub} />
             </Card.Link>
           }
         </Card.ImgOverlay>
