@@ -26,7 +26,6 @@ const AboutPage = () => {
   const github = {title: "github", img: Logos.github, description: descriptions.github }
   infos.push(react, typescript, bootstrap, github);
 
-
   const renderGrid = () => {
     const items = infos.map((info) => {
       return(

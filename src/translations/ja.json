@@ -22,5 +22,24 @@
       "info": "保守、新しい機能を開発しました。関係者やユーザーと関わり、問題解決しました。REST APIを開発して、3つのシステムを連携しました。"
     }
   },
-  "aboutpage": {}
+  "aboutpage": {
+    "title": "サイトについて",
+    "subtext": "このページは開発環境やトールを表示しています。",
+    "react": {
+      "title": "React",
+      "description": "Reactを使用して、SPA作成しました"
+    },
+    "typescript": {
+      "title": "TypeScript",
+      "description": "主にTypeScriptを使用して、開発しました"
+    },
+    "bootstrap": {
+      "title": "BootStrap",
+      "description": "Bootstrapフロントエンドフレームワークを使用しました"
+    },
+    "github": {
+      "title": "GitHub",
+      "description": "GitHub Pagesでリリースしました"
+    }
+  }
 }
