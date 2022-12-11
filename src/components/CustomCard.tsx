@@ -11,32 +11,34 @@ interface props {
   link?: string;
 }
 
-const CustomCard = ({ className, title, img, link }:props) => {
+const CustomCard = ({ className, title, img, link }: props) => {
   const { t } = useTranslation();
 
-  const titles:any = {
-    "offgrid": `${t("portfoilo.offgrid.title")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.title") }`,
-    "gathersg": `${t("portfoilo.gathersg.title") }`
+  const titles: any = {
+    offgrid: `${t("portfoilo.offgrid.title")}`,
+    scubadoo: `${t("portfoilo.scubadoo.title")}`,
+    gathersg: `${t("portfoilo.gathersg.title")}`
   }
-  const descriptions:any = {
-    "offgrid": `${t("portfoilo.offgrid.description")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.description")}`,
-    "gathersg": `${t("portfoilo.gathersg.description")}`
+  const descriptions: any = {
+    offgrid: `${t("portfoilo.offgrid.description")}`,
+    scubadoo: `${t("portfoilo.scubadoo.description")}`,
+    gathersg: `${t("portfoilo.gathersg.description")}`
   }
-  const infos:any = {
-    "offgrid": `${t("portfoilo.offgrid.info")}`,
-    "scubadoo": `${t("portfoilo.scubadoo.info")}`,
-    "gathersg": `${t("portfoilo.gathersg.info")}`
+  const infos: any = {
+    offgrid: `${t("portfoilo.offgrid.info")}`,
+    scubadoo: `${t("portfoilo.scubadoo.info")}`,
+    gathersg: `${t("portfoilo.gathersg.info")}`
   }
 
   return (
     <div className={`${className}`}>
       <Card className='bg-dark h-100 text-white'>
-        <Card.Img src={img} variant="top" alt="Card image" className='h-100'/>
-        <Card.ImgOverlay className='d-flex justify-content-end align-items-end'>
+        <Card.Img src={img} variant="top" alt={title} className='h-100'/>
+        <Card.ImgOverlay className='d-flex justify-content-end align-items-start'>
           { link &&
-            <Card.Link href={link}><FontAwesomeIcon color='white' size='1x' icon={faGithub} /></Card.Link>
+            <Card.Link href={link} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon color='black' size='lg' icon={faGithub} />
+            </Card.Link>
           }
         </Card.ImgOverlay>
         <Card.Body>

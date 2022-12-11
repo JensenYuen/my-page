@@ -4,7 +4,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
-import InfoPage from './pages/InfoPage';
+import AboutPage from './pages/AboutPage';
 import Portfoilo from './pages/Portfoilo';
 
 const App = () => {
@@ -18,12 +18,12 @@ const App = () => {
 
   return (
     <HashRouter>
-      <NavBar title='React' links={links} onChangeLanguage={changeLanguage}/>
+      <NavBar links={links} onChangeLanguage={changeLanguage}/>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/home' element={<HomePage />} />
         <Route path='/portfoilo' element={<Portfoilo />} />
-        <Route path='/about' element={<InfoPage />} />
+        <Route path='/about' element={<AboutPage />} />
       </Routes>
       <Footer />
     </HashRouter>

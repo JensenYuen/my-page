@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/profile.png'
+import { ProfileImg } from '../constants/constant';
 
 interface Props {
   className?: string
@@ -14,7 +14,7 @@ const Image = ({className}:Props) => {
         height: '65vh',
       }}
     >
-      <img src={profile} alt="profile pic"/>
+      <img src={ProfileImg} alt="profile pic"/>
     </div>
   );
 }
