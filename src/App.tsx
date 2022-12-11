@@ -9,7 +9,6 @@ import Portfoilo from './pages/Portfoilo';
 
 const App = () => {
   const links: string[] = ['home','portfoilo','about'];
-
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
