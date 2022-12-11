@@ -1,9 +1,7 @@
 import react from 'react'
 import { Container } from 'react-bootstrap';
 import CustomCard from '../components/CustomCard';
-import offgrid from '../assets/offgrid.png'
-import scubadoo from '../assets/scubadoo.png'
-import gathersg from '../assets/gathersg.png'
+import { ProjImgs, ProjLinks } from '../constants/constant';
 import { useTranslation } from 'react-i18next';
 
 interface CardInfo {
@@ -14,12 +12,11 @@ interface CardInfo {
 
 const Portfoilo = () => {
   const { t } = useTranslation();
-
   const infos: CardInfo[] = [];
 
-  const productOffgid = { title: "offgrid", img: offgrid, link: 'https://github.com/eztree/offgrid' };
-  const productScubadoo = { title: "scubadoo", img: scubadoo, link: 'https://github.com/suansen/scubadoo' };
-  const productGathersg = { title: "gathersg", img: gathersg };
+  const productOffgid = { title: "offgrid", img: ProjImgs.offgrid, link: ProjLinks.offgird };
+  const productScubadoo = { title: "scubadoo", img: ProjImgs.scubadoo, link: ProjLinks.scubadoo };
+  const productGathersg = { title: "gathersg", img: ProjImgs.gathersg };
   infos.push(productOffgid, productScubadoo, productGathersg);
 
   const renderCards = () => {
