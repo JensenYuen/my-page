@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import CustomCard from '../components/CustomCard';
 import { ProjImgs, ProjLinks } from '../constants/constant';

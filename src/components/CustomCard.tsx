@@ -1,6 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import react from 'react'
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { useTranslation } from 'react-i18next';
 
