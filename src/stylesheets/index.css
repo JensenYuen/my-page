@@ -12,12 +12,13 @@ code {
     monospace;
 }
 
-main {
+a {
+  text-decoration: none;
+}
+
+#root {
   height: 100vh;
   background-color: #FFF8EA;
   color: #594545;
-}
-
-a {
-  text-decoration: none;
+  overflow: auto;
 }

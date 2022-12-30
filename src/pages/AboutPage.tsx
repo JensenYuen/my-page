@@ -42,17 +42,15 @@ const AboutPage = () => {
   }
 
   return (
-    <main>
-      <Container fluid style={{ margin: "auto", paddingTop: "4vw", paddingInline: "5vw" }}>
-        <div className='d-flex flex-column py-5 px-4'>
-          <h2 className="pb-2 border-bottom">{t("aboutpage.title")}</h2>
-          <p className='pt-2'>{t("aboutpage.subtext")}</p>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-            {renderGrid()}
-          </div>
+    <Container fluid style={{ margin: "auto", paddingTop: "4vw", paddingInline: "5vw" }}>
+      <div className='d-flex flex-column py-5 px-4'>
+        <h2 className="pb-2 border-bottom">{t("aboutpage.title")}</h2>
+        <p className='pt-2'>{t("aboutpage.subtext")}</p>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          {renderGrid()}
         </div>
-      </Container>
-    </main>
+      </div>
+    </Container>
   );
 }
 
